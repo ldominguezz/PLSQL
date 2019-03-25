@@ -1,0 +1,8 @@
+CREATE FUNCTION mult(num1 integer, num2 integer) RETURNS void AS $$
+DECLARE 
+	resultat integer :=0;
+BEGIN
+	resultat:=num1*num1;
+	RAISE NOTICE "La multiplicación es %", resultat;
+END;
+$$ LANGUAGE 'plpgsql';
