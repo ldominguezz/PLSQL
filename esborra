@@ -1,0 +1,5 @@
+CREATE FUNCTION esborra_activitat(id_act integer) RETURNS void AS $$
+BEGIN
+	DELETE FROM activitats WHERE id_activitat = id_act;
+END;
+$$ LANGUAGE 'plpgsql';
